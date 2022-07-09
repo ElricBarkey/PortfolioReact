@@ -20,9 +20,7 @@ export const About = () => {
       })
   }, [])
   
-
-  return (
-    <>
+    /*
       <h2 className='head-text'>
       I Know that 
       <span> Good Development </span>
@@ -30,7 +28,12 @@ export const About = () => {
       means 
       <span> Good Business</span>
       </h2>
-
+      */
+  return (
+    <>
+    <h2 className='head-text'>
+    About
+    </h2>
       <div className='app__profiles'>
         {abouts.map((about, index) => (
           <motion.div

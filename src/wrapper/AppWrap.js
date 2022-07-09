@@ -1,10 +1,10 @@
 import React from 'react'
-import{NavigationDots, SocialMedia} from '../components'
-
+import{NavigationDots} from '../components'
+//, SocialMedia 
+//put back under component if needed <SocialMedia/>
 const AppWrap = (Componet, idName, classNames) => function HOC(){
   return (
     <div id={idName} className={`app__container ${classNames}`}>
-        <SocialMedia/>
         <div className='app__wrapper app__flex'>
             <Componet/>
 

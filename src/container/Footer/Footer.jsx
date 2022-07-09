@@ -28,11 +28,18 @@ const Footer = () => {
       message: message,
     }
 
-    client.create(contact)
+    if (contact.name === "" || contact.email === "") {
+      alert("please fill out form fully");
+      setLoading(false);
+    }
+    else{
+      client.create(contact)
       .then(() => {
         setLoading(false);
         setIsFormSubmitted(true);
       })
+    }
+
   }
 
   return (
